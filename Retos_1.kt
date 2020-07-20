@@ -25,7 +25,7 @@ fun main(){
 
 
 
-fun compareTonumber(){
+private fun compareTonumber(){
     //Reto 1
     //comparacion de dos numeros
     println("Escribe un numero ")
@@ -41,7 +41,7 @@ fun compareTonumber(){
         println("El segundo numero es mayor al primero con una diferencia de ${num2-num1}")
 
 }
-fun range() {
+private fun range() {
     //Reto 2
     println("Ingrese un numero que sera el limite superior")
     val num1= writeNumber()
@@ -52,7 +52,7 @@ fun range() {
     else
         println("El numero $num2 esta fuera del rango")
 }
-fun changingRanges(){
+private fun changingRanges(){
     println("Escribe el limite Superior")
     var num1= writeNumber()
     println("Escribe el Limite Inferior")
@@ -76,7 +76,7 @@ fun changingRanges(){
     else
         print("Los limites son iguales no se puede ejecutar")
 }
-fun iLikeTurtles() {
+private fun iLikeTurtles() {
    println("Cual es tu animal Favorito")
     val animal = readLine().toString()
     if (animal.equals("tortuga",true)) {
@@ -89,7 +89,7 @@ fun iLikeTurtles() {
     else
         println("Tu animal es cool pero prefiero las tortugas")
 }
-fun howIsTheWeather(){
+private fun howIsTheWeather(){
     println("Rsponde las siguientes preguntas con si o no")
     println("Como Esta el dia ¿Esta lloviendo?")
     val res1= yesOrNo()
@@ -105,7 +105,7 @@ fun howIsTheWeather(){
         println("Espero que tengas un muy buen dia")
 
 }
-fun egeAllowed(){
+private fun egeAllowed(){
     println("Por favor escribe tu Edad")
     val edad = writeNumber()
     if (edad >= 30)
@@ -115,7 +115,7 @@ fun egeAllowed(){
     else
         println("¿Sabes hacia dónde dirigir tu futuro? Seguro puedo ayudarte")
 }
-fun differentsMessages(){
+private fun differentsMessages(){
     println("Escribe un numero del 1 y 6")
     when(writeNumber()){
         1 -> println("Hoy aprenderemos sobre prorgamación")

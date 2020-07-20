@@ -36,7 +36,7 @@ fun main(){
 
 
 }
-fun mutiplication(){
+private fun mutiplication(){
     println(askForDouble)
     val num1 = writeDouble()
     println(askForDouble)
@@ -44,7 +44,7 @@ fun mutiplication(){
     val result=num1.times(num2)
     println(result)
 }
-fun squareRoot(){
+private fun squareRoot(){
     println(askForNumber + "mayor a 20")
     val num1 = writeDouble()
     val result = sqrt(num1)
@@ -68,13 +68,13 @@ fun squareRoot(){
     println(kotlin.math.ceil(result))
 
 }
-fun circuleArea(){
+private fun circuleArea(){
     println(askForNumber)
     val radius = writeDouble()
     val area = PI.times(radius.pow(2.0))
     println("El area del circulo es de $area")
 }
-fun cylider(){
+private fun cylider(){
     println("$askForNumber para la base")
     val radius = writeDouble()
     val area = PI.times(radius.pow(2.0))
@@ -84,7 +84,7 @@ fun cylider(){
 
     println("El volumne del cilindro es de $volumen ")
 }
-fun residue(){
+private fun residue(){
     println(askForNumber)
     val num1 = writeNumber()
     println(askForNumber)
@@ -94,7 +94,7 @@ fun residue(){
     val decimal = num1%num2
     println("El resultado es: $result y sobran  $decimal")
 }
-fun areas() {
+private fun areas() {
     val options = arrayOf<String>("triangulo","cuadrado","pentagono")
     println("Elige una de las opciones escribiendo el numero correspondiente ")
     for ((index,value) in options.withIndex())
@@ -111,7 +111,7 @@ fun areas() {
     print("Hasta luego")
 }
 
-fun pentagono() {
+private fun pentagono() {
     print("Elegiste pentagono")
     println("$askForNumber para la base")
     val base =writeDouble()
@@ -123,7 +123,7 @@ fun pentagono() {
     println("EL area es $area y el perimetro $perimeter")
 }
 
-fun cuadrado() {
+private fun cuadrado() {
     print("Elegiste cuadrado")
     println("$askForNumber para el lado")
     val base =writeDouble()
@@ -132,7 +132,7 @@ fun cuadrado() {
     println("EL area es $area y el perimetro $perimeter")
 }
 
-fun triangulo(){
+private fun triangulo(){
     print("Elegiste triagulo")
     println("$askForNumber para la base")
     val base =writeDouble()

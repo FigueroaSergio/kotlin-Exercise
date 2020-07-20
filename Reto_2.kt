@@ -26,7 +26,7 @@ fun main(){
 
 
 
-fun stringLength(){
+private fun stringLength(){
     //Reto 1  Tercer nivel
     //comparacion de dos numeros
     println("Escribe tu nombre ")
@@ -36,7 +36,7 @@ fun stringLength(){
     else
         println("Tu nombre una longitud de $nombre")
 }
-fun addString(){
+private fun addString(){
     //Reto 2
     println("Escribe tu nombre ")
     val nombre = readLine().toString()
@@ -51,7 +51,7 @@ fun addString(){
 
 
     }
-fun ajustString(){
+private fun ajustString(){
     println("Por favor escribe todo en minusculas")
     println("Escribe tu nombre ")
     var nombre = readLine().toString()
@@ -66,7 +66,7 @@ fun ajustString(){
 
     println("Hola $nombre $apellido que chevere  saber que eres de $pais")
     }
-fun fragmentString(){
+private fun fragmentString(){
     println("Escribe una oracion de mas de 10 caracteras")
     val phrase= readLine().toString()
 
@@ -86,7 +86,7 @@ fun fragmentString(){
      else
          println(phrase.substring(num1-1,num2))
 }
-fun mayusAndMinus(){
+private fun mayusAndMinus(){
     println("Escribe un palabra")
     val palabra1 = readLine().toString()
     println("Escribe otra palabra")
@@ -94,7 +94,7 @@ fun mayusAndMinus(){
     println(palabra1.toUpperCase())
     println(palabra2.toLowerCase())
 }
-fun longOrShort(){
+private fun longOrShort(){
     println("Escribe tu nombre")
     val nombre = readLine().toString()
     if (nombre.length > 5)
@@ -106,7 +106,7 @@ fun longOrShort(){
 
     }
 }
-fun pigLatin(){
+private fun pigLatin(){
     val vocales= arrayListOf<Char>('a','e','o','i','u')
     var x:Boolean=false
     println("Escribe un palabra para traducir a pig Latin")
